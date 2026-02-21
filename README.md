@@ -40,6 +40,17 @@ sudo pacman -S gtk4 libadwaita python-gobject
 
 ## Installation
 
+### Pre-built binary
+
+Download the latest executable for your architecture from [GitHub Releases](https://github.com/danlion333/compresswitch/releases).
+
+```sh
+chmod +x compresswitch-linux-*
+./compresswitch-linux-x86_64  # or aarch64
+```
+
+> **Note:** GTK 4 and libadwaita must still be installed on your system (see system dependencies above).
+
 ### From source with uv
 
 ```sh
