@@ -1,7 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
+import glob
 import os
 
-typelib_dir = '/usr/lib64/girepository-1.0'
+# Find typelib directory (varies by distro)
+_candidates = glob.glob('/usr/lib*/girepository-1.0') + \
+              glob.glob('/usr/lib/*/girepository-1.0')
+typelib_dir = _candidates[0] if _candidates else '/usr/lib/girepository-1.0'
 typelibs = [
     'Adw-1.typelib',
     'Gdk-4.0.typelib',
