@@ -1,0 +1,26 @@
+[project]
+name = "compresswitch"
+version = "0.1.0"
+description = "Compress and decompress Nintendo Switch XCI/NSP files"
+readme = "README.md"
+authors = [
+    { name = "Danylo", email = "danylovyslo2003@gmail.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "nsz>=4.0",
+    "PyGObject>=3.42",
+]
+
+[project.scripts]
+compresswitch = "compresswitch.main:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.19.0",
+]

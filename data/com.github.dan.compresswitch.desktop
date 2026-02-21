@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=CompressSwitch
+Comment=Compress and decompress Nintendo Switch XCI/NSP files
+Exec=compresswitch
+Icon=applications-games-symbolic
+Terminal=false
+Type=Application
+Categories=Utility;
+MimeType=application/octet-stream;
